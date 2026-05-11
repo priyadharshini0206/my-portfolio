@@ -65,8 +65,9 @@ section {
 }
 .Home {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  gap: 5rem;
 }
 .Home-content h3 {
   font-size: 3.2rem;
@@ -80,7 +81,7 @@ span {
 }
 .Home-content h1 {
   font-size: 5.6rem;
-  font-weight: 500;
+  font-weight: 200;
   line-height: 1.3;
 }
 .Home-img img {
@@ -100,6 +101,8 @@ span {
 }
 .Home-content p {
   font-size: 1.6rem;
+  max-width: 65rem;
+  line-height: 1.6;
 }
 .social-media a {
   display: inline-flex;
@@ -212,118 +215,103 @@ span {
 }
 
 .Education-box h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 15px;
-  color: #fff;
+  color: aqua;
 }
 
 .Education-box p {
-  font-size: 1rem;
+  font-size: 1.8rem;
   color: #fff;
   line-height: 1.8;
 }
 
-.Portfolio {
-  background: var(--snd-bg-color);
-}
-.Portfolio h2 {
-  margin-bottom: 4rem;
-}
-.Portfolio-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  gap: 2.5rem;
-}
-.Portfolio-container .Portfolio-box {
-  position: relative;
-  border-radius: 2rem;
-  box-shadow: 0 0 1rem var(--bg-color);
-  overflow: hidden;
-  display: flex;
-}
-.Portfolio-box img {
-  width: 100%;
-  transition:transform 0.5s ease, opacity 0.5s ease;
-  opacity: 0.7;
-}
-.Portfolio-box:hover img {
-  transform: scale(1.1);
-  opacity: 1;
+.Skills{
+    background: #000;
+    color: white;
+    padding: 5rem 9%;
 }
 
-.Portfolio-box .Portfolio-layer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 4rem;
-  transform: translateY(100%);
-  transition: 0.5s ease;
+.Skills .heading{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 4rem;
 }
-.Portfolio-box:hover .Portfolio-layer {
-  transform: translateY(0);
+
+.Skills-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 2rem;
 }
-.Portfolio-layer h4 {
-  font-size: 3rem;
+
+.Skills-box{
+    background: #1f242d;
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
 }
-.Portfolio-layer p {
-  font-size: 1.6rem;
-  margin: 3rem 0 1rem;
+
+.Skills-box:hover{
+    border-color: cyan;
+    transform: scale(1.05);
 }
-.Portfolio-layer a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 5rem;
-  height: 5rem;
-  background: var(--text-color);
-  border-radius: 50%;
+
+.Skills-box i{
+    font-size: 4rem;
+    color: cyan;
+    margin-bottom: 1rem;
 }
-.Portfolio-layer a i {
-  font-size: 2rem;
-  color: var(--snd-bg-color);
+
+.Skills-box h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
-.Contact h2 {
-  margin-bottom: 3rem;
+
+.Skills-box p{
+    font-size: 1.4rem;
 }
-.Contact form {
-  max-width: 70rem;
-  margin: 1rem auto;
-  text-align: center;
-  margin-bottom: 3rem;
+.Project{
+    background: #000;
+    color: white;
+    padding: 5rem 9%;
 }
-.Contact form .input-box {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+
+.Project .heading{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 4rem;
 }
-.Contact form .input-box input,
-.Contact form textarea {
-  width: 100%;
-  padding: 1.5rem;
-  font-size: 1.6rem;
-  color: var(--text-color);
-  background: var(--snd-bg-color);
-  border-radius: 0.8rem;
-  margin: 0.7rem 0;
+
+.Project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 2rem;
 }
-.Contact form .input-box input {
-  width: 49%;
+
+.Project-box{
+    background: #1f242d;
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
 }
-.Contact form textarea {
-  resize: none;
+
+.Project-box:hover{
+    border-color: cyan;
+    transform: scale(1.03);
 }
-.Contact form .btn {
-  margin-top: 2rem;
-  cursor: pointer;
+
+.Project-box h3{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: cyan;
+}
+
+.Project-box p{
+    font-size: 1.4rem;
+    line-height: 1.6;
 }
 .footer {
   display: flex;
