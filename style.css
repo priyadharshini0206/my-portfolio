@@ -175,40 +175,54 @@ span {
 .btn:hover {
   box-shadow: none;
 }
-.Services h2 {
-  margin-bottom: 5rem;
-}
-.Services-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-.Services-container .Services-box {
-  flex: 1 1 30rem;
+
+/* Education Section */
+.Education {
   background: var(--snd-bg-color);
-  padding: 3rem 2rem 4rem;
-  border-radius: 2rem;
+  padding: 80px 9%;
+}
+
+.Education .heading {
   text-align: center;
-  border: 0.2rem solid var(--bg-color);
-  transition: 0.5s ease;
+  font-size: 4rem;
+  margin-bottom: 40px;
 }
-.Services-container .Services-box:hover {
-  border-color: var(--main-color);
-  transform: scale(1.02);
+
+.Education .heading span {
+  color: #0ef;
 }
-.Services-box i {
-  font-size: 7rem;
-  color: var(--main-color);
+
+.Education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
-.Services-box h3 {
-  font-size: 2.6rem;
+
+.Education-box {
+ background: var(--snd-bg-color);
+  
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
 }
-.Services-box p {
-  font-size: 1.6rem;
-  margin: 1rem 0 3rem;
+
+.Education-box:hover {
+  transform: translateY(-5px);
 }
+
+.Education-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.Education-box p {
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.8;
+}
+
 .Portfolio {
   background: var(--snd-bg-color);
 }
